@@ -150,6 +150,10 @@
   width: 70%;
   font-family: "Roboto", sans-serif;
   max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /*increible efecto en txt*/
 }
 
 .container_card_menu .container_card_texte p {
@@ -294,4 +298,88 @@ NO SE AGRANDE O ENCHIQUITE POR EL TEXTO*/
 }
 
 /*esta es la respuesta de la animacion*/
+.menu-content__confirmation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  width: 20%;
+}
+
+.menu-content:hover .menu-content__confirmation {
+  margin-right: -10px;
+}
+
+.menu-content__check-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  width: 25px;
+}
+
+.menu-content__check-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu-content_menu {
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.02);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.02);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px;
+  overflow: hidden;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-animation: apparition .5s;
+          animation: apparition .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  max-width: 100%;
+}
+
+.menu-content__icon {
+  color: #99E2D0;
+}
+
+.container_card_menu {
+  border-radius: 1rem;
+  -webkit-box-shadow: 1px 5px 10px #979494;
+          box-shadow: 1px 5px 10px #979494;
+  background-color: white;
+}
+
+.container_card_menu:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
 /*# sourceMappingURL=page1.css.map */
