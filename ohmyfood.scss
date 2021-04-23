@@ -167,6 +167,8 @@ $grey:#f6f6f6;
             width: 100%;
             padding: 20px;
             min-width: 360px;
+            transform: scale(1);
+            transition-duration: 400ms;
             .menu_card__img{
                 position:relative;
                 
@@ -238,15 +240,16 @@ $grey:#f6f6f6;
               font-size:30px;
               color:#818181;
               transform: scale(1);
-              transition-property:transform;
-              transition-duration: 400ms;
+        transition-property:transform;
+        transition-duration: 400ms;
             }
         
             .fa-heart:hover  {
-                color: #9356DC;
-                transform: scale(1.5);
-                transform:rotate(360deg);
-              
+                color:$colorviolet;
+                // background: linear-gradient(to bottom, #ff52fc, #a35bdc);
+                transform: scale(1.3);
+                transition-duration: 400ms;
+                
             }
   }
   
@@ -279,52 +282,20 @@ $grey:#f6f6f6;
         padding-left: 10px;
     }
   }
-//   @media (min-width: 768px) and (max-width: 2024px){
+  @media (min-width: 768px) and (max-width: 2024px){
     
-//     .container_foctionnement 
-//     {height:90px;
-//       display: flex;
-//       background:rgb(104, 36, 36);
-//       flex-direction:row;
-//       padding:50px ;
-      
-//       position:relative;
-//       }
-//     .container_foctionnement__title
-//     {display: flex;
-//         position: absolute;
-//         bottom:130px;
-//         justify-content: center;
-//       background:rgb(04, 36, 36);
-//     }
+    .container_foctionnement 
+    {height:90px;
+      display: flex;
+      flex-direction:row;
+      padding:50px ;
+      position:relative;
+      }
+    .container_foctionnement__title
+    {display: flex;
+        position: absolute;
+        bottom:130px;
+        justify-content: center;
+    }
    
-//   }
-//   @media (min-width: 769px) and (max-width: 2024px){
-   
-//     .container_menu
-//    {
-//    display: flex;
-//    height:800px;
-//    background:blue;
-//     }
-//     .restaurants__title
-//     {
-//       display: flex;
-//       justify-content:center;
-     
-//     }
-//     .container_restaurants {
-//       background-color: #cf3030;
-//       padding: 20px 0 60px 0;
-//       display:grid;
-//       grid-template-columns: repeat(2, 1fr);
-   
-//       column-gap: 2rem;
-     
-//     }
-   
-//     .menu_card {
-//       background-color: #611e1e;
-     
-//     }
-//   }
+  }

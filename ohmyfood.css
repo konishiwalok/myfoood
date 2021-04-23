@@ -220,6 +220,10 @@
   width: 100%;
   padding: 20px;
   min-width: 360px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 .container_menu .container_restaurants .menu_card .menu_card__img {
@@ -325,10 +329,10 @@
 
 .container_banniere .fa-heart:hover {
   color: #9356DC;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 .contact_us_proposer {
@@ -361,5 +365,30 @@
   font-family: "Roboto", sans-serif;
   color: #fff;
   padding-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 2024px) {
+  .container_foctionnement {
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
+    position: relative;
+  }
+  .container_foctionnement__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=ohmyfood.css.map */
