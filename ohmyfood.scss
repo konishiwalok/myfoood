@@ -5,6 +5,7 @@ $colorceleste :#99E2D0;
 $fonttexte:'Roboto', sans-serif;
 $fontlogotitres:'Shrikhand', cursive;
 $grey:#f6f6f6;
+
   * {
     margin: 0;
     padding: 0;
@@ -101,7 +102,7 @@ $grey:#f6f6f6;
     margin-bottom: 50px;
     .container_foctionnement__title {
       margin: 30px 10px 15px 40px;
-      font-family: "Roboto", sans-serif;
+      font-family: $fonttexte;
       width: 100%;
       font-size: 18px;
     }
@@ -144,7 +145,12 @@ $grey:#f6f6f6;
       padding-left:20px
     }
   }
-  
+  .container_reservation__bottom:hover
+  { transform: scale(1.2);
+    transition-duration: 400ms;
+    transform: 1s;
+
+  }
 //   /*menus*/
   
   .container_menu {

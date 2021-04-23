@@ -186,6 +186,15 @@
   padding-left: 20px;
 }
 
+.container_reservation__bottom:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: 1s;
+          transform: 1s;
+}
+
 .container_menu {
   display: -webkit-box;
   display: -ms-flexbox;
