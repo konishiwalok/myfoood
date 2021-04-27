@@ -470,52 +470,103 @@
 }
 
 /*loader*/
-/**ANIMAICON  DE MATHIEU
+.container_loader {
+  width: 100vh;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Shrikhand", cursive;
+}
 
+.loading {
+  width: 200px;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
+  -webkit-animation: a1 4s linear infinite;
+          animation: a1 4s linear infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+}
 
-  .loader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.90);
-    animation: loader 0.01s;
-    animation-delay: 1.75s;
-    animation-fill-mode: both;
-    z-index: 10000;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-    &__item {
-      height: 1rem;
-      width: 1rem;
-      border-radius: 1rem;
-      animation: jump 1s;
-      animation-iteration-count: 1;
-  
-      &Container {
-        display: flex;
-        width: 5rem;
-        justify-content: space-between;
-      }
-  
-      &--1 {
-        background-color: $color-primary;
-      }
-    
-      &--2 {
-        background-color: $color-secondary;
-        animation-delay: 0.25s;
-      }
-    
-      &--3 {
-        background-color: $color-tertiary;
-        animation-delay: 0.5s;
-      }
-    }
-  
-    
-  }*/
+.loading::before, .loading::after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loading::before {
+  border-top: 10px solid #FF79DA;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.loading::after {
+  border-top: 10px solid #99E2D0;
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.loading span {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  color: #9356DC;
+  text-align: center;
+  line-height: 200px;
+  -webkit-animation: a2 4s linear infinite;
+          animation: a2 4s linear infinite;
+}
+
+@-webkit-keyframes a1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes a1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes a2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
 /*# sourceMappingURL=ohmyfood.css.map */
