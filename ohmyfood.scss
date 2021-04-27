@@ -39,21 +39,26 @@ $grey:#f6f6f6;
   .container_localisation {
     background: #eaeaea;
     box-shadow: -2px 19px 21px -8px rgba(0, 0, 0, 0.26) inset;
-    padding: 15px;
+    padding: 23px;
     display: flex;
     justify-content: center;
     font-family:$fonttexte;
     gap: 15px;
     font-weight: bold;
-    .container_localisation__text {
-      color: #444444;
-      font-size: 19px;
-    }
-    .container_localisation i {
-      color: #444444;
-      font-size: 18px;
-    }
-
+  }
+  .box_recherche {
+    border:transparent none;
+    background-color:#e8e8e8;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 12rem;
+    font-weight: bold;
+    font-size: 1rem;
+   
+  }
+  .box_recherche::placeholder {
+    font-size: 1.2rem;
+    color: #00000069;
   }
   
   /*Reservations presentation*/
@@ -89,6 +94,12 @@ $grey:#f6f6f6;
       box-shadow: 1px 5px 10px rgb(151, 148, 148);
       font-family:$fonttexte;
     }
+    }
+    .container_reservation__bottom:hover
+    { transform: scale(1.05);
+      transition-duration: 400ms;
+      transform: 1s;
+  
     }
 //   /*FOCTIONNEMENT*/
   .container_foctionnement {
@@ -145,12 +156,7 @@ $grey:#f6f6f6;
       padding-left:20px
     }
   }
-  .container_reservation__bottom:hover
-  { transform: scale(1.2);
-    transition-duration: 400ms;
-    transform: 1s;
-
-  }
+ 
 //   /*menus*/
   
   .container_menu {
@@ -247,17 +253,35 @@ $grey:#f6f6f6;
               color:#818181;
               transform: scale(1);
         transition-property:transform;
+        cursor: pointer;
+  
+    
+    transition: .4s;
+    
+      }
+      
+      .fa-heart:hover  {
+        color:$colorviolet;
+        // background: linear-gradient(to bottom, #ff52fc, #a35bdc);
+        transform: scale(1.3);
         transition-duration: 400ms;
-            }
-        
-            .fa-heart:hover  {
-                color:$colorviolet;
-                // background: linear-gradient(to bottom, #ff52fc, #a35bdc);
-                transform: scale(1.3);
-                transition-duration: 400ms;
-                
+        animation: animateHeart .4s;
             }
   }
+     /*Keyframes palpitacion corazon*/
+  
+  @keyframes animateHeart {
+    0% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
   
 //   /*FOOTER*/
   
@@ -306,17 +330,7 @@ $grey:#f6f6f6;
    
   }
   /*loader*/
-//   body{
-//     margin:0px;
-//     padding:0px;
-//     background: #fff;
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     font-family: 'Montserrat', sans-serif;
-    
-// }
+ 
 // .loading
 // {
 //     width: 200px;
@@ -365,154 +379,53 @@ $grey:#f6f6f6;
 //   transform:rotate(-360deg)
 //     }
 //     }
-// HTLM
-// <div class="loading">
-//      <span>loading...</span>
-//  </div>
 
 
+/**ANIMAICON  DE MATHIEU
 
-/*ESTO ES  EL CHECKING PLAZADO*/
-// $colorviolet: #9356DC;
-// $colorrose :#FF79DA;
-// $colorceleste :#99E2D0;
-// $fonttexte:'Roboto', sans-serif;
-// $fontlogotitres:'Shrikhand', cursive;
-// $grey:#f6f6f6;
 
-//   * {
-// margin: 0;
-// padding: 0;
-// text-decoration: none;
-// color:inherit;
-// }
-
-// .contenedor {
-//     display: flex;
-//    width: 90%;
-//    height:90px;
-//     border:1px solid black;
-//     position: relative;
-//     animation: delay 1000ms;
-//     &:hover  .icono
-//     {
-//         display:block;
-//     }
-// }
-// .texto {
-//     width: 60%;
-//     height:80px;
-//      border:1px solid black;
-//      background-color: rgb(89, 80, 150); 
-//     }
-//  .precio {
-//     width: 20%;
-//     height:80px;
-//      border:1px solid black;
-//       background-color: rgb(72, 156, 138);
-//  }
-//  .icono {
-//     width: 20%;
-//     height:80px;
-//      border:1px solid black;
-//      display:none;
-//      position:absolute;
-//      background-color: lightcoral;
-//      transform-origin: right ;
-//      transform:translatex(390%);
-//      transition:transform  ;
-//     animation: check 1000ms 150ms;
-//  }
-// @keyframes check {
-//     0%{ opacity: (0.0);
-//         transform:translatex(390%);
-//     }
-//     50%{ opacity: (0.9);
-//     }
-//     100%{ opacity: (1);
-//     }
-// }
-// @keyframes delay {
-//     0% { opacity:(0);
-//         transform: translatey(15px);
-//     }
-//     50% { opacity:(0.6) translatey(5px);;
-//     }
-//     100% { opacity:(1)translatey(0px);;
-//     }
-// }
-// HTML DE AYUDA
-// <div class="contenedor"class="delay">
-//  <div class="texto"class="delay"></div>
-//  <div class="precio"class="delay"></div>
-//  <div class="icono"class="delay"></div>
-//    </div> 
-//    <div class="contenedor"class="delay">
-//     <div class="texto"class="delay"></div>
-//     <div class="precio"class="delay"></div>
-//     <div class="icono"class="delay"></div>
-//       </div> 
-//       <div class="contenedor"class="delay">
-//         <div class="texto"class="delay"></div>
-//         <div class="precio"class="delay"></div>
-//         <div class="icono"class="delay"></div>
-//           </div> 
-//           <div class="contenedor"class="delay">
-//             <div class="texto"class="delay"></div>
-//             <div class="precio"class="delay"></div>
-//             <div class="icono"class="delay"></div>
-//               </div> 
-// **************************
-
-/*corazoon*/
-
-// *
-// {
-//     margin:0px;
-//     padding:0px;
-//     box-sizing: border-box; 
-//     line-height: inherit; 
+  .loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+    &__item {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+      animation: jump 1s;
+      animation-iteration-count: 1;
+  
+      &Container {
+        display: flex;
+        width: 5rem;
+        justify-content: space-between;
+      }
+  
+      &--1 {
+        background-color: $color-primary;
+      }
     
-// }
-// .icon_recherche_geolocalisation{
-//     display: flex;
-//     justify-content:center;
-//     align-items:center;
-// }
-// .icono1{
-//    position: relative;
-//     color: rgb(0, 0, 0);
-//     transform:scale(1);
-//     animation:corazon 1s ;
-//     font-size:150px;
-
-// }
-// .icono2{
-     
-//     position: absolute;
-//     font-size: 40px;      
-//     transform:scale(1);
-// 	background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
-//     background: -webkit-linear-gradient(right, #e72c83 0%,#a742c6 100%); 
-//     background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
-//     -webkit-background-clip: text;
-//     -moz-background-clip: text;
-//     background-clip: text;
-//     -webkit-text-fill-color:transparent;
-//     z-index: 1;
-//     left: 10px;
-//     top: 10px;
-//     font-size:130px;
-//     &:hover{
-       
-//          transform:scale(1.20)
-//      }
-// }
-
-/*html corawon*/
-// <div class="iconos">
-// <div class="heart"> 
-//     <i class="icono2 fas fa-heart"></i>
-//     <i class="icono1 far fa-heart"></i>
-// </div> 
-// </div>
+      &--2 {
+        background-color: $color-secondary;
+        animation-delay: 0.25s;
+      }
+    
+      &--3 {
+        background-color: $color-tertiary;
+        animation-delay: 0.5s;
+      }
+    }
+  
+    
+  }*/
