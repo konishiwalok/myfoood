@@ -276,7 +276,7 @@
           align-items: center;
   position: absolute;
   border-radius: 3px;
-  right: 6rem;
+  right: 10%;
   bottom: 10rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -442,6 +442,7 @@
             flex-direction: row;
     padding: 50px;
     position: relative;
+    background-color: red;
   }
   .container_foctionnement__title {
     display: -webkit-box;
@@ -449,9 +450,22 @@
     display: flex;
     position: absolute;
     bottom: 130px;
+    right: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .container_restaurants {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container_restaurants__title {
+    position: absolute;
+    bottom: 100%;
+    left: 40%;
   }
 }
 
