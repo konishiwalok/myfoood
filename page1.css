@@ -436,7 +436,7 @@ body h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
   color: #fff;
 }
 
