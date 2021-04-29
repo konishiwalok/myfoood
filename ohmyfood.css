@@ -5,6 +5,7 @@
   color: inherit;
 }
 
+/*ESTO ENGLOBA TITULO HASTA BOTON VIOLETA*/
 .header_container {
   width: 100%;
   height: 80%;
@@ -227,6 +228,46 @@
   transition: 1s;
 }
 
+/*reponsive foctionnement et menu*/
+@media (min-width: 768px) and (max-width: 3024px) {
+  .container_foctionnement {
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
+    position: relative;
+    background-color: red;
+  }
+  .container_foctionnement__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    right: 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_restaurants {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container_restaurants__title {
+    position: absolute;
+    bottom: 100%;
+    left: 40%;
+  }
+}
+
 .container_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +312,19 @@
   position: relative;
 }
 
+.container_menu .container_restaurants .menu_card .menu_card__img .image_plats {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  width: 90%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container_menu .container_restaurants .menu_card .menu_card__img .banniere_nouveau {
   background-color: #99e2d0;
   color: #2ca185;
@@ -291,19 +345,6 @@
   bottom: 10rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-}
-
-.container_menu .container_restaurants .menu_card .image_plats {
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 100%;
-  width: 90%;
-  max-height: 100%;
-  border-radius: 1rem 1rem 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .container_menu .container_restaurants .menu_card:hover {
@@ -355,7 +396,7 @@
   padding: 5px;
 }
 
-.container_banniere .fa-heart {
+.container_banniere .menu_card__icon .fa-heart {
   font-size: 30px;
   color: #818181;
   -webkit-transform: scale(1);
@@ -365,8 +406,8 @@
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .container_banniere .fa-heart:hover {
@@ -434,50 +475,11 @@
   color: #fff;
 }
 
-.contact_us_proposer .contact_us__txt {
+.contact_us_proposer .containe__contact_us .contact_us__txt {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: #fff;
   padding-left: 10px;
-}
-
-@media (min-width: 768px) and (max-width: 3024px) {
-  .container_foctionnement {
-    height: 90px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 50px;
-    position: relative;
-    background-color: red;
-  }
-  .container_foctionnement__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 130px;
-    right: 0%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .container_restaurants {
-    display: -ms-grid;
-    display: grid;
-    position: relative;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .container_restaurants__title {
-    position: absolute;
-    bottom: 100%;
-    left: 40%;
-  }
 }
 
 /*loader*/

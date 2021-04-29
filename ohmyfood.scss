@@ -12,6 +12,7 @@ $grey:#f6f6f6;
     text-decoration: none;
     color:inherit;
   }
+  /*ESTO ENGLOBA TITULO HASTA BOTON VIOLETA*/
   .header_container {
     width: 100%;
     height: 80%;
@@ -32,9 +33,7 @@ $grey:#f6f6f6;
             justify-content: center;
         }
         }
-
     }
-
   }
   .container_localisation {
     background: #eaeaea;
@@ -54,7 +53,6 @@ $grey:#f6f6f6;
     width: 12rem;
     font-weight: bold;
     font-size: 1rem;
-   
   }
   .box_recherche::placeholder {
     font-size: 1.2rem;
@@ -164,6 +162,38 @@ $grey:#f6f6f6;
       transform: scale(1.05);
       transition:1s;
     }
+  /*reponsive foctionnement et menu*/
+@media (min-width: 768px) and (max-width: 3024px){
+
+  .container_foctionnement 
+  { height:90px;
+    display: flex;
+    flex-direction:row;
+    padding:50px ;
+    position:relative;
+    background-color: red;
+  }
+  .container_foctionnement__title
+  {
+    display: flex;
+    position: absolute;
+    bottom:130px;
+    right:0%;
+    justify-content: center;
+  }
+  .container_restaurants
+  {
+    display:grid;
+    position:relative;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container_restaurants__title
+  {
+    position: absolute;
+    bottom:100%;
+    left: 40%;
+  }
+  }
 //   /*menus*/
   
   .container_menu {
@@ -172,187 +202,145 @@ $grey:#f6f6f6;
     align-items: center;
     justify-content: center;
     .container_restaurants {
-        background-color:$grey;
-        padding: 20px 0 60px 0;
-        margin-top: 20px;
-        width: 100%;
+      background-color:$grey;
+      padding: 20px 0 60px 0;
+      margin-top: 20px;
+      width: 100%;
         .container_restaurants__title {
-          width: 100%;
-          padding: 50px 0px 0px 20px;
-          font-family:$fonttexte;
-          font-size: 19px;
+        width: 100%;
+        padding: 50px 0px 0px 20px;
+        font-family:$fonttexte;
+        font-size: 19px;
         }
-        .menu_card {
-            width: 100%;
-            padding: 20px;
-            min-width: 360px;
-            transform: scale(1);
-            transition-duration: 400ms;
-            .menu_card__img{
-                position:relative;
-                
-                .banniere_nouveau{
-                background-color:#99e2d0;
-                color: #2ca185;
-                height:30px;
-                width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position:absolute;
-                border-radius: 3px;
-                right:10%;
-                bottom:10rem;
-                font-weight: bold;
-                font-family: $fonttexte;
-            }
-                
-            }
-                .image_plats {
-                height: 200px;
-                object-fit: cover;
-                max-width: 100%;
-                width: 90%;
-                max-height: 100%;
-                border-radius: 1rem 1rem 0 0;
-                display: flex;
-                }
-            }
-                .menu_card:hover {
-                transform: scale(1.02);
-                }
-    }
-  }
-  .container_banniere {
-    display: flex;
-    width: 90%;
-    height: 80px;
-    background-color: #ffffff;
-   
-    box-shadow: 1px 5px 10px rgb(151, 148, 148);
-    border-radius: 0 0 1rem 1rem;
-        .banniere_textes {
-        border-radius: 0 0 0 1rem;
-        width: 90%;
-        margin: 10px;
-        padding:5px;
-        font-family: $fonttexte;
-                .menu_card__text1
-                {font-size: 23px;
-                }
-                .menu_card__text2
-                {font-size: 20px;
-                    padding-top:5px;
-                }
-        }
+.menu_card {
+width: 100%;
+padding: 20px;
+min-width: 360px;
+transform: scale(1);
+transition-duration: 400ms;
 
-    .menu_card__icon{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        width: 10%;
-        margin: 10px;
-        padding:5px;
-          }
-          
-          .fa-heart {
-              font-size:30px;
-              color:#818181;
-              transform: scale(1);
-        transition-property:transform;
-        cursor: pointer;
-  
-    
-    transition: .4s;
-    
+  .menu_card__img{
+  position:relative;
+      .image_plats {
+      height: 200px;
+      object-fit: cover;
+      max-width: 100%;
+      width: 90%;
+      max-height: 100%;
+      border-radius: 1rem 1rem 0 0;
+      display: flex;
       }
-      
-      .fa-heart:hover  {
-        color:$colorviolet;
-        // background: linear-gradient(to bottom, #ff52fc, #a35bdc);
-        transform: scale(1.3);
-        transition-duration: 400ms;
-        animation: animateHeart .4s;
+      .banniere_nouveau{
+      background-color:#99e2d0;
+      color: #2ca185;
+      height:30px;
+      width: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:absolute;
+      border-radius: 3px;
+      right:10%;
+      bottom:10rem;
+      font-weight: bold;
+      font-family: $fonttexte;
+      }
+    }
+  }
+  .menu_card:hover {
+  transform: scale(1.02);
+  }
+}
+}
+
+.container_banniere {
+display: flex;
+width: 90%;
+height: 80px;
+background-color: #ffffff;
+box-shadow: 1px 5px 10px rgb(151, 148, 148);
+border-radius: 0 0 1rem 1rem;
+      .banniere_textes {
+      border-radius: 0 0 0 1rem;
+      width: 90%;
+      margin: 10px;
+      padding:5px;
+      font-family: $fonttexte;
+            .menu_card__text1
+            {font-size: 23px;
             }
+            .menu_card__text2
+            {font-size: 20px;
+                padding-top:5px;
+            }
+}
+
+.menu_card__icon{
+display: flex;
+justify-content: center;
+align-items:center;
+width: 10%;
+margin: 10px;
+padding:5px;
+    .fa-heart {
+      font-size:30px;
+      color:#818181;
+      transform: scale(1);
+      transition-property:transform;
+      cursor: pointer;
+      transition: 0.5s;
+      }
+}
+.fa-heart:hover  {
+  color:$colorviolet;
+  // background: linear-gradient(to bottom, #ff52fc, #a35bdc);
+  transform: scale(1.3);
+  transition-duration: 400ms;
+  animation: animateHeart .4s;
   }
+}
      /*Keyframes palpitacion corazon*/
-  
-  @keyframes animateHeart {
-    0% {
-      transform: scale(1);
-    }
-    40% {
-      transform: scale(1.3);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  
+@keyframes animateHeart {
+0% {
+transform: scale(1);
+}
+40% {
+transform: scale(1.3);
+}
+100% {
+transform: scale(1);
+}
+}
+
 //   /*FOOTER*/
   
-  .contact_us_proposer
+  .contact_us_proposer 
   {
   background-color:#353535;
   height:200px;
   padding: 30px;
     .contact_us_title
-    {
-        font-family:$fontlogotitres;
+    {   font-family:$fontlogotitres;
         color: #fff;
         font-size:30px;
     }
-    .containe__contact_us
-    {
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-        padding-top: 20px;
-        color: #fff;
-    }
-  
+.containe__contact_us
+{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding-top: 20px;
+  color: #fff;
     .contact_us__txt
     { font-size: 20px;
-        font-family: $fonttexte;
-        color: #fff;
-        padding-left: 10px;
+      font-family: $fonttexte;
+      color: #fff;
+      padding-left: 10px;
     }
+}
+  
   }
-  @media (min-width: 768px) and (max-width: 3024px){
-    
-    .container_foctionnement 
-    {height:90px;
-      display: flex;
-      flex-direction:row;
-      padding:50px ;
-      position:relative;
-      background-color: red;
-      }
-    .container_foctionnement__title
-    {
-      display: flex;
-        position: absolute;
-        bottom:130px;
-        right:0%;
-        justify-content: center;
-      }
 
-
-
-        .container_restaurants
-        {
-          display:grid;
-          position:relative;
-          grid-template-columns: repeat(2, 1fr);
-          }
-        .container_restaurants__title
-        {
-            position: absolute;
-            bottom:100%;
-          left: 40%;
-        }
-        }
 
   /*loader*/
  
