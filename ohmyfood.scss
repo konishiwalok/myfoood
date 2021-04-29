@@ -337,16 +337,9 @@ transform: scale(1);
       color: #fff;
       padding-left: 10px;
     }
+ }
 }
-  
-  }
-
-
-
-
-
-
-/***********MI LOADING****************************************/
+/*LOADING********/
 
 .container_loading
 { 
@@ -414,22 +407,14 @@ transform: rotate(120deg);
  
   }
   .loading span{
-   
-    width: 200px;
-    height:200px;
-    position: absolute;
+    font-size:25px;
     color:#9356DC;
-    text-align: center;
-    line-height:200px;
     animation:a2 4s linear infinite;
 }
   @keyframes a1{
 
     100%{
   transform:rotate(360deg);
-  opacity: 0;
-  z-index: -10;
-
   }
   }
   @keyframes a2{
