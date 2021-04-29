@@ -483,9 +483,142 @@
 }
 
 /***********MI LOADING****************************************/
-/***************EL LOADING QUE FUNCIONA*****************************************/
-/* Font Styles variables */
-/***********MI LOADING****************************************/
-/***************EL LOADING QUE FUNCIONA*****************************************/
-/* Font Styles variables */
+.container_loading {
+  -webkit-animation: loader 3s;
+          animation: loader 3s;
+  -webkit-animation-delay: 1.10s;
+          animation-delay: 1.10s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.loading {
+  width: 100vh;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Shrikhand", cursive;
+  z-index: 10000;
+  -webkit-animation: a1 4s linear 9999;
+          animation: a1 4s linear 9999;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  width: 200px;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
+  -webkit-animation: a1 4s linear 1;
+          animation: a1 4s linear 1;
+  animation-fill-mode: both;
+  z-index: 10000;
+}
+
+.loading::before, .loading::after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loading::before {
+  border-top: 10px solid #FF79DA;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.loading::after {
+  border-top: 10px solid #99E2D0;
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.loading span {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  color: #9356DC;
+  text-align: center;
+  line-height: 200px;
+  -webkit-animation: a2 4s linear infinite;
+          animation: a2 4s linear infinite;
+}
+
+@-webkit-keyframes a1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes a1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes a2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 /*# sourceMappingURL=ohmyfood.css.map */
