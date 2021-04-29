@@ -28,13 +28,13 @@ body h3 {
 }
 
 /*titulo oh my food + flecha*/
-.header-title .back-home {
+.header-title .icone_fleche {
   left: 15px;
   position: absolute;
   top: 30px;
 }
 
-.back-home i {
+.icone_fleche i {
   font-size: 25px;
 }
 
@@ -188,6 +188,7 @@ body h3 {
           animation-fill-mode: forwards;
   max-width: 100%;
   /*Keyframes card blanco */
+  /*delay cards menus*/
   /*contendedor dentro del contendedor blanco*/
   /*precio de menus*/
   /*check de menus*/
@@ -202,7 +203,7 @@ body h3 {
   50% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
-    opacity: 30%;
+    opacity: 50%;
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -220,13 +221,58 @@ body h3 {
   50% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
-    opacity: 30%;
+    opacity: 50%;
   }
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 100%;
   }
+}
+
+.menu-content .delay-1 {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.menu-content .delay-2 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.menu-content .delay-3 {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.menu-content .delay-4 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.menu-content .delay-5 {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.menu-content .delay-6 {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.menu-content .delay-7 {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+.menu-content .delay-8 {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.menu-content .delay-9 {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
 .menu-content .menu-content__header {
@@ -400,41 +446,4 @@ body h3 {
   color: #fff;
   padding-left: 10px;
 }
-
-/*
-  .delay-1 {
-    animation-delay: .1s;
-  }
-  
-  .delay-2 {
-    animation-delay: .2s;
-  }
-  
-  .delay-3 {
-    animation-delay: .3s;
-  }
-  
-  .delay-4 {
-    animation-delay: .4s;
-  }
-  
-  .delay-5 {
-    animation-delay: .5s;
-  }
-  
-  .delay-6 {
-    animation-delay: .6s;
-  }
-  
-  .delay-7 {
-    animation-delay: .7s;
-  }
-  
-  .delay-8 {
-    animation-delay: .8s;
-  }
-  
-  .delay-9 {
-    animation-delay: .9s;
-  }*/
 /*# sourceMappingURL=page1.css.map */

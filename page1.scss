@@ -28,12 +28,12 @@ body h3 {
     justify-content: center;
   }
   /*titulo oh my food + flecha*/
-  .header-title .back-home {
+  .header-title .icone_fleche {
     left: 15px;
     position: absolute;
     top: 30px;
   }
- .back-home i {
+ .icone_fleche i {
    font-size: 25px;
   }
   /*talla y propriedades de imagen*/
@@ -149,13 +149,42 @@ opacity: 0%;
 }
 50% {
 transform:translateY(10px);
-opacity: 30%;
+opacity: 50%;
 }
 100% {
 transform:translateY(0px);
 opacity: 100%;
 }
 }
+ /*delay cards menus*/
+.delay-1 {
+  animation-delay: .1s;
+}
+.delay-2 {
+  animation-delay: .2s;
+}
+.delay-3 {
+  animation-delay: .3s;
+}
+.delay-4 {
+  animation-delay: .4s;
+}
+.delay-5 {
+  animation-delay: .5s;
+}
+.delay-6 {
+  animation-delay: .6s;
+}
+.delay-7 {
+  animation-delay: .7s;
+}
+.delay-8 {
+  animation-delay: .8s;
+}
+.delay-9 {
+  animation-delay: .9s;
+}
+
 /*contendedor dentro del contendedor blanco*/
   .menu-content__header
    {
@@ -283,39 +312,3 @@ opacity: 100%;
       }
    }
 }
-  /*
-  .delay-1 {
-    animation-delay: .1s;
-  }
-  
-  .delay-2 {
-    animation-delay: .2s;
-  }
-  
-  .delay-3 {
-    animation-delay: .3s;
-  }
-  
-  .delay-4 {
-    animation-delay: .4s;
-  }
-  
-  .delay-5 {
-    animation-delay: .5s;
-  }
-  
-  .delay-6 {
-    animation-delay: .6s;
-  }
-  
-  .delay-7 {
-    animation-delay: .7s;
-  }
-  
-  .delay-8 {
-    animation-delay: .8s;
-  }
-  
-  .delay-9 {
-    animation-delay: .9s;
-  }*/
