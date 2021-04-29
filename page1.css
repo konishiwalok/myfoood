@@ -1,5 +1,6 @@
 body {
   background: white;
+  margin: 0;
 }
 
 body a {
@@ -10,10 +11,6 @@ body a {
 body h3 {
   margin: 30px 10px 15px;
   font-family: "Roboto", sans-serif;
-}
-
-body p {
-  font-family: "Roboto Thin", sans-serif;
 }
 
 /*titulo oh my food*/
@@ -37,6 +34,10 @@ body p {
   top: 30px;
 }
 
+.back-home i {
+  font-size: 25px;
+}
+
 /*talla y propriedades de imagen*/
 .banniere-img {
   margin-bottom: -30px;
@@ -51,6 +52,16 @@ body p {
   height: 25px;
 }
 
+/*RESPONSIVE-CONTENEDOR DE TODOS LOS MENUS
+  GROD Y DESPUES DE 992PX*/
+.sections-restaurants-menu {
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  background-color: red;
+  border-radius: 50px 50px 0px 0px;
+}
+
 /* Contenedor de titulo principal y corazon */
 .menu-header {
   -webkit-box-align: center;
@@ -60,6 +71,7 @@ body p {
   display: -ms-flexbox;
   display: flex;
   font-weight: normal;
+  border-radius: 50px 50px 0px 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -68,22 +80,9 @@ body p {
 }
 
 .menu-header h2 {
+  font-size: 30px;
+  font-weight: normal;
   font-family: "Shrikhand", cursive;
-}
-
-/*RESPONSIVE-CONTENEDOR DE TODOS LOS MENUS
-  GROD Y DESPUES DE 992PX*/
-.sections-restaurants-menu {
-  background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
-  position: relative;
-  background-color: red;
-}
-
-@media screen and (min-width: 992px) {
-  .sections-restaurants-menu {
-    margin: -10px 50px 0px;
-  }
 }
 
 .heart svg {
@@ -181,14 +180,12 @@ body p {
   overflow: hidden;
   padding: 10px;
   cursor: pointer;
-  -webkit-animation: apparition .5s;
-          animation: apparition .5s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   max-width: 100%;
   /*Keyframes card blanco */
   /*contendedor dentro del contendedor blanco*/
@@ -200,32 +197,36 @@ body p {
 
 @-webkit-keyframes apparition {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
     opacity: 0%;
   }
   50% {
-    opacity: 0%;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 30%;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 100%;
   }
 }
 
 @keyframes apparition {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
     opacity: 0%;
   }
   50% {
-    opacity: 0%;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 30%;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 100%;
   }
 }
@@ -245,8 +246,9 @@ body p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: bold;
+  background-color: red;
   margin: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -254,24 +256,29 @@ body p {
 }
 
 .menu-content__description {
-  margin-top: 10px;
+  background-color: red;
+  margin-top: 5px;
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .menu-content__price {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #4a4a4a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 23px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-left: 20px;
+  padding: 10px;
 }
 
 .menu-content__confirmation {
@@ -359,8 +366,6 @@ body p {
           transform: 1s;
 }
 
-/*footer*/
-/*FOOTER*/
 .contact_us_proposer {
   background-color: #353535;
   height: 220px;
@@ -371,6 +376,7 @@ body p {
   font-family: "Shrikhand", cursive;
   color: #fff;
   font-size: 30px;
+  font-weight: normal;
 }
 
 .contact_us_proposer .containe__contact_us {
