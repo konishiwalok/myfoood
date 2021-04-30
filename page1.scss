@@ -6,6 +6,7 @@ $fonttexte:'Roboto', sans-serif;
 $fontlogotitres:'Shrikhand', cursive;
 $grey:#f6f6f6;
 
+
 body {
   background: white;
   margin:0;
@@ -31,14 +32,14 @@ body h3 {
   .header-title .icone_fleche {
     left: 15px;
     position: absolute;
-    top: 30px;
+    top: 25px;
   }
  .icone_fleche i {
    font-size: 25px;
   }
   /*talla y propriedades de imagen*/
   .banniere-img {
-    margin-bottom: -30px;
+    margin-bottom: -40px;
     max-height: 300px;
     object-fit: cover;
     width: 100%;
@@ -55,7 +56,6 @@ body h3 {
     background-color: $grey;
     border-radius: 30px 30px 0 0;
     position: relative;
-    background-color:red;
     border-radius: 50px 50px 0px 0px;
   }
   /* Contenedor de titulo principal y corazon */
@@ -66,7 +66,6 @@ body h3 {
     border-radius: 50px 50px 0px 0px;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: #278666;
     h2 {
         font-size:30px;
         font-weight:normal;
@@ -114,10 +113,8 @@ body h3 {
   max-width: 100%;
   overflow: hidden;
   padding: 0px 10px;
-  background-color:blue;
   /*TITILO DE MENUS Y LINEAS CELESTES*/
   .menus__title {
-      background-color:rgb(124, 124, 131);
       font-family: $fonttexte;
       font-weight: normal;
       padding-bottom: 10px;
@@ -192,14 +189,12 @@ opacity: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background:#9356DC;
     font-family: $fonttexte;
     /*titulo de menus*/
       .menu-content__title {
         flex: 1;
         font-size: 27px;
         font-weight: bold;
-        background-color:red;
         margin: 5px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -207,7 +202,6 @@ opacity: 100%;
       }
       /*texto de menus*/
       .menu-content__description {
-        background-color:red;
         margin-top: 5px;
         font-size: 23px;
         font-family: $fonttexte;
@@ -218,20 +212,20 @@ opacity: 100%;
     }
 /*precio de menus*/
 .menu-content__price {
-  align-items: flex-end;
-  color: #4a4a4a;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #4a4a4a;
   font-weight: bold;
   font-size: 23px;
-  justify-content: flex-end;
   padding: 10px;
 }
 /*check de menus*/
 .menu-content__confirmation {
-  align-items: center;
-  background-color: $colorceleste;
   display: flex;
+  align-items: center;
   justify-content: center;
+  background-color: $colorceleste;
   margin: -16px -120px -16px 16px;
   transition-duration: .5s;
   width: 104px;

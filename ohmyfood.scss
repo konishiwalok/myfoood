@@ -91,17 +91,18 @@ $grey:#f6f6f6;
       font-size: 18px;
       box-shadow: 1px 5px 10px rgb(151, 148, 148);
       font-family:$fonttexte;
+  
     }
     }
     .container_reservation__bottom:hover
     { transform: scale(1.05);
       transition-duration: 400ms;
-      transform: 1s;
+      transform: 12s;
   
     }
 //   /*FOCTIONNEMENT*/
   .container_foctionnement {
-    background-color:#ffff;
+    background-color:#fff;
     height: 380px;
     display: grid;
     display: flex;
@@ -171,7 +172,7 @@ $grey:#f6f6f6;
     flex-direction:row;
     padding:50px ;
     position:relative;
-    background-color: red;
+    background-color: #fff;
   }
   .container_foctionnement__title
   {
@@ -231,17 +232,17 @@ transition-duration: 400ms;
       display: flex;
       }
       .banniere_nouveau{
-      background-color:#99e2d0;
-      color: #2ca185;
-      height:30px;
-      width: 90px;
       display: flex;
       justify-content: center;
       align-items: center;
       position:absolute;
-      border-radius: 3px;
+      background-color:#99e2d0;
       right:10%;
       bottom:10rem;
+      color: #2ca185;
+      height:30px;
+      width: 90px;
+      border-radius: 3px;
       font-weight: bold;
       font-family: $fonttexte;
       }

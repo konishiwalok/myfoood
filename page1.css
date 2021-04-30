@@ -31,7 +31,7 @@ body h3 {
 .header-title .icone_fleche {
   left: 15px;
   position: absolute;
-  top: 30px;
+  top: 25px;
 }
 
 .icone_fleche i {
@@ -40,7 +40,7 @@ body h3 {
 
 /*talla y propriedades de imagen*/
 .banniere-img {
-  margin-bottom: -30px;
+  margin-bottom: -40px;
   max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -58,7 +58,6 @@ body h3 {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
   position: relative;
-  background-color: red;
   border-radius: 50px 50px 0px 0px;
 }
 
@@ -76,7 +75,6 @@ body h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 20px;
-  background-color: #278666;
 }
 
 .menu-header h2 {
@@ -152,12 +150,10 @@ body h3 {
   max-width: 100%;
   overflow: hidden;
   padding: 0px 10px;
-  background-color: blue;
   /*TITILO DE MENUS Y LINEAS CELESTES*/
 }
 
 .menus .menus__title {
-  background-color: #7c7c83;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   padding-bottom: 10px;
@@ -282,7 +278,6 @@ body h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: #9356DC;
   font-family: "Roboto", sans-serif;
   /*titulo de menus*/
   /*texto de menus*/
@@ -294,7 +289,6 @@ body h3 {
           flex: 1;
   font-size: 27px;
   font-weight: bold;
-  background-color: red;
   margin: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -302,7 +296,6 @@ body h3 {
 }
 
 .menu-content .menu-content__header .menu-content__description {
-  background-color: red;
   margin-top: 5px;
   font-size: 23px;
   font-family: "Roboto", sans-serif;
@@ -312,32 +305,32 @@ body h3 {
 }
 
 .menu-content .menu-content__price {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  color: #4a4a4a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: bold;
-  font-size: 23px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 23px;
   padding: 10px;
 }
 
 .menu-content .menu-content__confirmation {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #99E2D0;
   margin: -16px -120px -16px 16px;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
