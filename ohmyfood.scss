@@ -290,7 +290,7 @@ width: 10%;
 margin: 10px;
 padding:5px;
     .fa-heart {
-      font-size:30px;
+      font-size:29px;
       color:#818181;
       transform: scale(1);
       transition-property:transform;
@@ -300,7 +300,9 @@ padding:5px;
 }
 .fa-heart:hover  {
   color:$colorviolet;
-  background: linear-gradient(to bottom, #ff52fc, #a35bdc);
+  background: -webkit-linear-gradient(bottom left,$colorrose, $colorviolet);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.3);
   transition-duration: 400ms;
   animation: animateHeart .4s;
