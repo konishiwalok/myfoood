@@ -5,27 +5,23 @@
 <head>
   <meta charset="utf-8">
   <title>ohmyfood</title>
-  <meta name="description" content="Réservez vos menus à Paris !">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="ohmyfood - réservez votre menu en ligne">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.ohmyfood.com">
-  <meta property="og:image" content="img/logo/ohmyfood@2x.svg">
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="ohmyfood.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script 
-  crossorigin="anonymous" src="https://kit.fontawesome.com/5e85fafa45.js"
-  >
-  </script>
+  <link rel="stylesheet" type="text/css" href="page1.css">
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e85fafa45.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="ohmyfood.css">
+ 
 </head>
 
 <body>
 
-
+  <div class="container_loading" >
+<div class="loading">
+<span>Loading...</span>
+</div>
+</div>
 <header>
   <div class="header__title">
     <img class="header__img" src="images/ohmyfood.png" alt="ohmyfood" title="ohmyfood">
@@ -86,21 +82,22 @@
 <section class="container_menu">
   <h3 class="title_restaurants">Restaurants</h3>
 <div class="section-restaurants" id="section2">
-  <a href="lapalettedugout.html">
+ 
+  <a href="palettedugout.html">
     <div class="restaurant-card">
       <div class="novelties-flag">
         <p>Nouveau</p>
       </div>
-      <img src="images/platpalette.jpg" alt="menu parisien" title="La palette du goût"
-      class="content">
+      <img src="images/platpalette.jpg" alt="menu parisien" title="La note enchantée">
+      <div class="content">
         <div class="card-content">
           <h4 class="restaurant-name">La palette du goût</h4>
-            <span class="restaurant-location">Ménilmontant</span>
-        </div>
+          <span class="restaurant-location">Ménilmontant</span>
+      </div>
         <div class="menu_card__icon">
             <i class="fas fa-heart"></i>
           </div>
-      </class=>
+      </div>
     </div>
   </a>
   <a href="lanoteenchantee.html">
@@ -166,174 +163,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head> MI PREMIR INDEX
-    <meta charset="UTF-8">
-    <link  href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"  rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/f97def1592.js" crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="ohmyfood.css">
-</head> 
-
-
-<body>
- 
-  <!-- <div class="container_loading" >
-<div class="loading">
-<span>Loading...</span>
-</div>
-<!-- </div> -->
-    <!-- <main class="blog_page"> 
-    <header class="header_container">
-        <div class="header__logo">
-            <img class="header__img" src="images/ohmyfood.png" alt="ohmyfood" title="ohmyfood">
-        </div>
-        <div class="container_localisation">
-            <i class="fas fa-map-marker-alt "></i>
-            <input class="box_recherche" type="search" placeholder="Paris, Belleville" size="1">
-        </div >
-        <div class="container_reservation">
-        <div class="container_reservation__title1">
-            <h1>Réservez le menu qui vous convient</h1>
-        </div>
-        <div class="container_reservation__title2">
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        </div>
-        <div class="container_reservation__bottom">
-            <input class="violet_bottom" type="button" value="Explorer nos restaurants">
-        </div>
-        </div>
-    </header>
-
-    <section class="container_foctionnement">
-        <div class="container_foctionnement__title">
-            <h2>Fonctionnement</h2>
-        </div>
-
-        <div class="fonctionnement_bottom">
-          <span class="circle">1</span>
-          <div class="icon_fonctionnement">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-        <a href=""> 
-           <span class="fonctionnement__texto">Choisissez un restaurant</span>
-       </a>
-        </div>
-        <div class="fonctionnement_bottom">
-          <span class="circle">2</span>
-          <div class="icon_fonctionnement">
-            <i class="fas fa-list-ul"></i>
-          </div>
-        <a href=""> 
-           <span class="fonctionnement__texto">Composez votre menu</span>
-       </a>
-        </div>
-        <div class="fonctionnement_bottom">
-          <span class="circle">3</span>
-          <div class="icon_fonctionnement">
-            <i class="fas fa-store"></i>
-          </div>
-        <a href=""> 
-           <span class="fonctionnement__texto">Dégustez au restaurant</span>
-       </a>
-        </div>
-    </section>
-
-    <section class="container_menu">
-    
-       
-        <div class="container_restaurants">
-          <header class="container_restaurants__title">
-          <h2 class="restaurants__title">Restaurants</h2>
-        </header>
-          <article class="menu_card">
-            <a href="palettedugout.html">
-              <div class="menu_card__img">
-                <img class="image_plats" src="images/platpalette.jpg" alt="menu parisien" title="La palette du goût">
-                <div class="banniere_nouveau">Nouveau</div>
-              </div>
-              <div class="container_banniere">
-              <div  class="banniere_textes" >
-                  <h3 class="menu_card__text1">La palette du goût</h3>
-                  <p class="menu_card__text2">Ménilmontant</p> 
-               </div>
-              <div class="menu_card__icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              </div>
-            </a>
-          </article>
-          <article class="menu_card">
-            <a href="lanoteenchantee.html">
-              <div class="menu_card__img">
-                <img class="image_plats" src="images/platenchante.jpg" alt="menu parisien" title="La note enchantée">
-                <div class="banniere_nouveau">Nouveau</div>
-              </div>
-              <div class="container_banniere">
-              <div  class="banniere_textes" >
-                  <h3 class="menu_card__text1">La note enchantée</h3>
-                  <p class="menu_card__text2">Charonne</p> 
-               </div>
-              <div class="menu_card__icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              </div>
-            </a>
-          </article>
-          <article class="menu_card">
-            <a href="alafrancaise.html">
-              <div class="menu_card__img">
-                <img class="image_plats" src="images/platalafrancaise.jpg" alt="menu parisien" title="A la  française">
-              </div>
-              <div class="container_banniere">
-              <div  class="banniere_textes" >
-                  <h3 class="menu_card__text1">A la  française </h3>
-                  <p class="menu_card__text2">Cité Rouge</p> 
-               </div>
-              <div class="menu_card__icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              </div>
-            </a>
-          </article>
-          <article class="menu_card">
-            <a href="ledelicedessens.html">
-              <div class="menu_card__img">
-                <img class="image_plats" src="images/platdelice.jpg" alt="menu parisien" title="Le délice des sens">
-              </div>
-              <div class="container_banniere">
-              <div  class="banniere_textes" >
-                  <h3 class="menu_card__text1">Le délice des sens</h3>
-                  <p class="menu_card__text2">Folie-Méricourt</p> 
-               </div>
-              <div class="menu_card__icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              </div>
-            </a>
-          </article>
-      </div>
-         </section>
-       </main> 
-     <footer class="contact_us_proposer">
-        <h3 class="contact_us_title">ohmyfood</h3>
-        <div class="containe__contact_us">
-         <span > <i class="fas fa-utensils"></i> 
-           <a href="" class="contact_us__txt">proposer un restaurant</a></span>
-         <span> <i class="fas fa-hands-helping"></i>
-            <a href="" class="contact_us__txt">Devenir partenaire</a></span>
-            <a href="" class="contact_us__txt">mentation légales</a>
-            <a  class="contact_us__txt" href="mailto:ohmyfood@outlook.fr">Contact</a>
-        </div>
-    </footer> 
-</body>
-</html>  -->

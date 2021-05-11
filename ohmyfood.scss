@@ -100,12 +100,14 @@ body {
       padding:0px 20px ;
       box-shadow: 1px 5px 10px rgb(151, 148, 148);
       font-family:$fonttexte;
+      transition:1s;
   
     }
     .container_reservation__bottom:hover
     { transform: scale(1.05);
       transition-duration: 400ms;
       transform: 12s;
+      transition:1s;
   
     }
   
@@ -145,6 +147,7 @@ body {
       font-family: $fonttexte;
       font-size: 16px;
       padding:22px 0px;
+      transition:1s;
         .circle {
           display: flex;
           justify-content: center;
@@ -185,12 +188,13 @@ body {
 @media (min-width: 768px) and (max-width: 3024px){
 
   .container_foctionnement 
-  { height:90px;
+  { height:40px;
     display: flex;
     flex-direction:row;
     padding:50px ;
     position:relative;
     background-color: #fff;
+    margin-top: 60px;
     .fonctionnement_bottom{
       height: 45px;
     }
@@ -228,6 +232,7 @@ body {
   .container_menu{
     padding: 10px 0px 5px 0px;
     background-color: #F6F6F6;
+    
     .title_restaurants
     {
         margin-left: 30px;
@@ -268,60 +273,66 @@ body {
     width: 100%;
   }
  
-    .restaurant-card {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 26px 58px -22px rgba(0, 0, 0, 0.48);
-    margin: 10px;
-    overflow: hidden;
-    position: relative;
+  .restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 26px 58px -22px rgba(0, 0, 0, 0.48);
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  transition:1s;
+  }
+  .restaurant-card:hover{
+    transform: scale(1.05);
+    transition:1s;
+  }
+.novelties-flag {
+    background-color: #9ae2d0;
+    color: #278666;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
     
-    .novelties-flag {
-        background-color: #9ae2d0;
-        color: #278666;
-        font-size: 13px;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        p {
-           margin: 5px 10px 5px 10px;
-         }
+  }
+    
+
+    .novelties-flag p {
+      font-family:  $fonttexte;
+      font-weight: bold;
+        margin: 5px 10px 5px 10px;
+      }
         
-          .content {
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 5px;
-           
-            .card-content {
-                flex: 1;
-                margin: 5px 0px 5px 10px;
-                width: 150px;
-            }
                 
-                .restaurant-name {
-                font-family: "Roboto", sans-serif;
-                font-weight: bolder;
-                margin: 0;
-               
-              }
-              
-              }
-          }
-      }
-     
-      .restaurant-location {
-        font-family: "Roboto Thin", sans-serif;
-        font-weight: lighter;
-      }
-      /*heart*/
+
+ 
+  .content {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  
+   .restaurant-name {
+    font-family:  $fonttexte;
+    font-weight: bolder;
+    font-size: 23px;
+    margin: 0;
+    padding-bottom:7px;
+    }
+    .restaurant-location {
+      font-family: $fonttexte;
+      font-weight: lighter;
+      font-size: 23px;
+    }
+  }
+  /*heart*/
 
   .menu_card__icon{
-  
+    display: flex;
     margin: 10px;
     padding:5px;
         .fa-heart {
-          font-size:20px;
+          font-size:30px;
           color:#818181;
           transform: scale(1);
           transition-property:transform;
@@ -333,6 +344,8 @@ body {
       color:$colorviolet;
       background: -webkit-linear-gradient(bottom left,$colorrose, $colorviolet);
       background-clip: text;
+      -webkit-background-clip: text;
+    -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1.3);
       transition-duration: 400ms;
@@ -351,476 +364,116 @@ body {
     transform: scale(1);
     }
     }
-
-  }
- 
-  
-
-  
-//   /*FOOTER*/
-  
-.contact_us_proposer 
-{
-background-color:#353535;
-
-padding: 20px;
-  .contact_us_title
-  {   font-family:$fontlogotitres;
-      color: #fff;
-      font-size:20px;
-  }
+    
+/*FOOTER*/
+.contact_us_proposer
+  {
+  background-color:#353535;
+  height:220px;
+  padding: 20px;
+    .contact_us_title
+    {
+        font-family:$fontlogotitres;
+        color: #fff;
+        font-size:30px;
+        font-weight:normal;
+    }
 .containe__contact_us
 {
-display: flex;
-flex-direction: column;
-gap:10px;
-padding-top: 20px;
-color: #fff;
-  .contact_us__txt
-  { font-size: 20px;
-    font-family: $fonttexte;
-    color: #fff;
-    padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding-top: 10px;
+  color: #fff;
+      .contact_us__txt
+      { font-size: 20px;
+      font-family: $fonttexte;
+      color: #fff;
+      padding-left: 10px;
+      }
+   }
+}
+
+.container_loading
+{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 3s;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  position: fixed;
+  animation-delay: 1.10s;
+  animation-fill-mode: both;
+  background-color: #F6F6F6;
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
 }
+.loading
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
+  animation:a1 4s linear 1;
+  animation-fill-mode: both;
+  background-color: #F6F6F6;
+  font-family: $fontlogotitres;
+  animation-fill-mode: both;
+
 }
-
-
-
-
-
-
-
-
-
-// $colorviolet: #9356DC;
-// $colorrose :#FF79DA;
-// $colorceleste :#99E2D0;
-// $fonttexte:'Roboto', sans-serif;
-// $fontlogotitres:'Shrikhand', cursive;
-// $grey:#f6f6f6; MI PRIMLER CSS
-
-//   * {
-//     margin: 0;
-//     padding: 0;
-//     text-decoration: none;
-//     color:inherit;
+.loading::before,.loading::after{
+    content: '';
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left: 0;
+    top:-10;
+    box-sizing: border-box;
+    border-radius: 50%;
     
-//   }
-//   /*ESTO ENGLOBA TITULO HASTA BOTON VIOLETA*/
-//   .header_container {
-//     // width: 100%;
-//     // height: 80%;
-//     .header__logo {
-//         background: #fff;
-//         padding: 20px;
-//         display: flex;
-//         justify-content: center;
-//         .header__img {
-//         width: 50%;
-//         }
-//         @media screen and (min-width: 1024px) {
-//         .header__img {
-//             padding: 20px;
-//             min-height: 100%;
-//             max-width: 400px;
-//             display: flex;
-//             justify-content: center;
-//         }
-//         }
-//     }
-//   }
-//   .container_localisation {
-//     background: #eaeaea;
-//     box-shadow: -2px 19px 21px -8px rgba(0, 0, 0, 0.26) inset;
-//     padding: 23px;
-//     display: flex;
-//     justify-content: center;
-//     font-family:$fonttexte;
-//     gap: 15px;
-//     font-weight: bold;
-//   }
-//   .box_recherche {
-//     border:transparent none;
-//     background-color:#e8e8e8;
-//     padding-left: 20px;
-//     box-sizing: border-box;
-//     width: 12rem;
-//     font-weight: bold;
-//     font-size: 1rem;
-//   }
-//   input:focus {
-//     outline:  none;
-// }
-//   .box_recherche::placeholder {
-//     font-size: 1.2rem;
-//     color: #00000069;
-//   }
-  
-//   /*Reservations presentation*/
-//   .container_reservation {
-//     background: #f6f6f6;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     text-align: center;
-//     padding: 50px 30px;
-//     .container_reservation__title1 {
-//       font-family:$fonttexte;
-//       font-weight: bold;
-//     }
-//     .container_reservation__title2 {
-//       padding-top: 20px;
-//       font-size: 20px;
-//       font-family: $fonttexte;
-//       color: #696969;
-//     }
-//     .container_reservation__bottom {
-//       padding-top: 40px;
-//     }
-//     .violet_bottom {
-//       background: linear-gradient(to bottom, #ff52fc, #a35bdc);
-//       height: 60px;
-//       width: 240px;
-//       border-radius: 2rem;
-//       color: #fff;
-//       border-style: none;
-//       cursor: pointer;
-//       font-size: 18px;
-//       box-shadow: 1px 5px 10px rgb(151, 148, 148);
-//       font-family:$fonttexte;
-  
-//     }
-//     }
-//     .container_reservation__bottom:hover
-//     { transform: scale(1.05);
-//       transition-duration: 400ms;
-//       transform: 12s;
-  
-//     }
-// //   /*FOCTIONNEMENT*/
-//   .container_foctionnement {
-//     background-color:#fff;
-//     height: 380px;
-   
-//     display: grid;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 20px;
-//     margin-bottom: 50px;
-//     transform: scale(1);
-//     transition:0.5s;
-  
-//     .container_foctionnement__title {
-//       margin: 30px 10px 15px 40px;
-//       font-family: $fonttexte;
-//       width: 100%;
-//       font-size: 18px;
-//     }
-//     .fonctionnement_bottom {
-//       background: #f5edff;
-//       border-radius: 1rem;
-//       box-shadow: 1px 5px 10px rgb(151, 148, 148);
-//       height: 75px;
-//       width: 90%;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       margin-top: 10px;
-//       position: relative;
-//       cursor: pointer;
-//       font-family: $fonttexte;
-//       font-size: 16px;
-//         .circle {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           background: #9356dc;
-//           border-radius: 50%;
-//           position: absolute;
-//           top: 25px;
-//           left: -10px;
-//           height: 25px;
-//           width: 25px;
-//           text-align: center;
-//           color: #fff;
-//         }
-//         .icon_fonctionnement {
-//           color: #7e7e7e;
-//           font-size: 20px;
-//         }
-//         .icon_fonctionnement:hover {
-//           color: #9356dc;  
-//         }
-//     }
-//     .fonctionnement__texto
-//     {
-//         font-family:$fonttexte;
-//       padding-left:20px
-//     }
-//   }
-//   .fonctionnement_bottom:hover
-//     {
-//       transform: scale(1.05);
-//       transition:1s;
-//     }
-//   /*reponsive foctionnement et menu*/
-// @media (min-width: 768px) and (max-width: 3024px){
-
-//   .container_foctionnement 
-//   { height:90px;
-//     display: flex;
-//     flex-direction:row;
-//     padding:50px ;
-//     position:relative;
-//     background-color: #fff;
-//   }
-//   .container_foctionnement__title
-//   {
-//     display: flex;
-//     position: absolute;
-//     bottom:130px;
-//     right:0%;
-//     justify-content: center;
-//   }
-//   .container_restaurants
-//   {
-//     display:grid;
-//     position:relative;
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-//   .container_restaurants__title
-//   {
-//     position: absolute;
-//     bottom:100%;
-//     left: 40%;
-//   }
-//   }
-// //   /*menus*/
-  
-//   .container_menu {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     .container_restaurants {
-//       background-color:$grey;
-//       padding: 20px 0 60px 0;
-//       margin-top: 20px;
-//       width: 100%;
-//         .container_restaurants__title {
-//         width: 100%;
-//         padding: 50px 0px 0px 20px;
-//         font-family:$fonttexte;
-//         font-size: 19px;
-//         }
-// .menu_card {
-// width: 100%;
-// padding: 20px;
-// min-width: 360px;
-// transform: scale(1);
-// transition-duration: 400ms;
-
-//   .menu_card__img{
-//   position:relative;
-//       .image_plats {
-//       height: 200px;
-//       object-fit: cover;
-//       max-width: 100%;
-//       width: 90%;
-//       max-height: 100%;
-//       border-radius: 1rem 1rem 0 0;
-//       display: flex;
-//       }
-//       .banniere_nouveau{
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       position:absolute;
-//       background-color:#99e2d0;
-//       right:10%;
-//       bottom:10rem;
-//       color: #2ca185;
-//       height:30px;
-//       width: 90px;
-//       border-radius: 3px;
-//       font-weight: bold;
-//       font-family: $fonttexte;
-//       }
-//     }
-//   }
-//   .menu_card:hover {
-//   transform: scale(1.02);
-//   }
-// }
-// }
-
-// .container_banniere {
-// display: flex;
-// width: 90%;
-// height: 80px;
-// background-color: #ffffff;
-// box-shadow: 1px 5px 10px rgb(151, 148, 148);
-// border-radius: 0 0 1rem 1rem;
-//       .banniere_textes {
-//       border-radius: 0 0 0 1rem;
-//       width: 90%;
-//       margin: 10px;
-//       padding:5px;
-//       font-family: $fonttexte;
-//             .menu_card__text1
-//             {font-size: 23px;
-//             }
-//             .menu_card__text2
-//             {font-size: 20px;
-//                 padding-top:5px;
-//             }
-// }
-
-// .menu_card__icon{
-// display: flex;
-// justify-content: center;
-// align-items:center;
-// width: 10%;
-// margin: 10px;
-// padding:5px;
-//     .fa-heart {
-//       font-size:29px;
-//       color:#818181;
-//       transform: scale(1);
-//       transition-property:transform;
-//       cursor: pointer;
-//       transition: 0.5s;
-//       }
-// }
-// .fa-heart:hover  {
-//   color:$colorviolet;
-//   background: -webkit-linear-gradient(bottom left,$colorrose, $colorviolet);
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   transform: scale(1.3);
-//   transition-duration: 400ms;
-//   animation: animateHeart .4s;
-//   }
-// }
-//      /*Keyframes palpitacion corazon*/
-// @keyframes animateHeart {
-// 0% {
-// transform: scale(1);
-// }
-// 40% {
-// transform: scale(1.3);
-// }
-// 100% {
-// transform: scale(1);
-// }
-// }
-
-// //   /*FOOTER*/
-  
-//   .contact_us_proposer 
-//   {
-//   background-color:#353535;
-
-//   padding: 30px;
- 
-//     .contact_us_title
-//     {   font-family:$fontlogotitres;
-//         color: #fff;
-//         font-size:30px;
-//     }
-// .containe__contact_us
-// {
-//   display: flex;
-//   flex-direction: column;
-//   gap:10px;
-//   padding-top: 20px;
-//   color: #fff;
-//     .contact_us__txt
-//     { font-size: 20px;
-//       font-family: $fonttexte;
-//       color: #fff;
-//       padding-left: 10px;
-//     }
-//  }
-// }
-// /*LOADING********/
-
-// // .container_loading
-// // { 
-// //   display: flex;
-// //   justify-content: center;
-// //   align-items: center;
-// //   animation: loader 3s;
-// //   height: 100%;
-// //   width: 100%;
-// //   z-index: 10000;
-// //   top: 0;
-// //   left: 0;
-// //   position: fixed;
-// //   animation-delay: 1.10s;
-// //   animation-fill-mode: both;
-// //   background-color: #F6F6F6;
-// // }
-// // @keyframes loader {
-// //   100% {
-// //     opacity: 0;
-// //     z-index: -10;
-// //   }
-// // }
-// // .loading
-// // {
-// //   display: flex;
-// //   justify-content: center;
-// //   align-items: center;
-// //   width: 200px;
-// //   height: 200px;
-// //   box-sizing: border-box;
-// //   border-radius: 50%;
-// //   border-top: 10px solid #9356DC;
-// //   animation:a1 4s linear 1;
-// //   animation-fill-mode: both;
-// //   background-color: #F6F6F6;
-// //   font-family: $fontlogotitres;
-// //   animation-fill-mode: both;
-
-// // }
-// // .loading::before,.loading::after{
-// //     content: '';
-// //     width: 200px;
-// //     height:200px;
-// //     position: absolute;
-// //     left: 0;
-// //     top:-10;
-// //     box-sizing: border-box;
-// //     border-radius: 50%;
-    
-// // }
-// // .loading::before{
-// //   border-top: 10px solid #FF79DA;
-// // transform: rotate(120deg);
-// // }
-// // .loading::after{
-// //     border-top: 10px solid #99E2D0;
-// //   transform: rotate(240deg);
+}
+.loading::before{
+  border-top: 10px solid #FF79DA;
+transform: rotate(120deg);
+}
+.loading::after{
+    border-top: 10px solid #99E2D0;
+  transform: rotate(240deg);
   
  
-// //   }
-// //   .loading span{
-// //     font-size:25px;
-// //     color:#9356DC;
-// //     animation:a2 4s linear infinite;
-// // }
-// //   @keyframes a1{
+  }
+  .loading span{
+    font-size:25px;
+    color:#9356DC;
+    animation:a2 4s linear infinite;
+}
+  @keyframes a1{
 
-// //     100%{
-// //   transform:rotate(360deg);
-// //   }
-// //   }
-// //   @keyframes a2{
-// //     to{
-// //   transform:rotate(-360deg)
-// //     }
-// //     }  
+    100%{
+  transform:rotate(360deg);
+  }
+  }
+  @keyframes a2{
+    to{
+  transform:rotate(-360deg)
+    }
+    }  
    
+
+
+
+     
+    
+      

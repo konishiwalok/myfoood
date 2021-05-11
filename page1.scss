@@ -91,6 +91,8 @@ body h3 {
       color:$colorviolet;
       background: -webkit-linear-gradient(bottom left,$colorrose, $colorviolet);
       background-clip: text;
+      -webkit-background-clip: text;
+    -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1.3);
       transition-duration: 400ms;
@@ -243,6 +245,7 @@ opacity: 100%;
 .container_reservation__bottom {
   padding: 40px;
   display: flex;
+  transition:1s;
   justify-content: center;
     .violet_bottom {
       background: linear-gradient(to bottom, #ff52fc, #a35bdc);
