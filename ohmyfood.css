@@ -133,8 +133,6 @@ input:focus {
           transform: scale(1.05);
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
-  -webkit-transform: 12s;
-          transform: 12s;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -274,7 +272,6 @@ input:focus {
     display: -ms-grid;
     display: grid;
     position: relative;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -311,7 +308,6 @@ input:focus {
   .section-restaurants {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -407,7 +403,6 @@ input:focus {
 .fa-heart:hover {
   color: #9356DC;
   background: -webkit-linear-gradient(bottom left, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -553,7 +548,7 @@ input:focus {
   height: 200px;
   position: absolute;
   left: 0;
-  top: -10;
+  top: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
